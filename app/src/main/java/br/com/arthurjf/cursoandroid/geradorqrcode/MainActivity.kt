@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
     private var edtQRCodeContent: EditText? = null
     private var btnGenerateQRCode: Button? = null
     private var imgQRCode: ImageView? = null
+    private var btnClean: Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +32,10 @@ class MainActivity : AppCompatActivity() {
             } else {
                 generateQRCode(content)
             }
+        }
+
+        btnClean!!.setOnClickListener{
+            edtQRCodeContent!!.setText("")
         }
     }
 
@@ -61,5 +66,6 @@ class MainActivity : AppCompatActivity() {
         edtQRCodeContent = findViewById(R.id.edtQRCodeContent)
         btnGenerateQRCode = findViewById(R.id.btnGenerateQRCode)
         imgQRCode = findViewById(R.id.imgQRCode)
+        btnClean = findViewById(R.id.btnClean)
     }
 }
