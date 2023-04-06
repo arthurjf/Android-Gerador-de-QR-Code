@@ -3,4 +3,5 @@
     <string name="hint_qr_code_content">Digite o conteúdo do QR Code</string>
     <string name="qr_code_generate_button">Gerar QR Code</string>
     <string name="qr_code_content_error_empty_content">Digite um conteúdo</string>
+    <string name="qr_code_content_clean_button">Limpar</string>
 </resources>

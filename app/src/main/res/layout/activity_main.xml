@@ -34,10 +34,25 @@
         app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
 
     <Button
+        android:id="@+id/btnClean"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clean_qr_code_button_layout_height"
+        android:layout_marginStart="@dimen/clean_qr_code_button_layout_width_margin_start"
+        android:layout_marginTop="@dimen/clean_qr_code_button_layout_width_margin_top"
+        android:layout_marginEnd="@dimen/clean_qr_code_button_layout_width_margin_end"
+        android:text="@string/qr_code_content_clean_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGenerateQRCode" />
+
+    <Button
         android:id="@+id/btnGenerateQRCode"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="@dimen/generate_qr_code_button_layout_height"
+        android:layout_marginStart="@dimen/generate_qr_code_button_layout_width_margin_start"
         android:layout_marginTop="4dp"
+        android:layout_marginEnd="@dimen/generate_qr_code_button_layout_width_margin_end"
         android:text="@string/qr_code_generate_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -52,7 +67,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnGenerateQRCode"
+        app:layout_constraintTop_toBottomOf="@+id/btnClean"
         app:layout_constraintVertical_bias="0.244"
         tools:srcCompat="@tools:sample/avatars" />
 
